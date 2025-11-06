@@ -29,7 +29,7 @@ En lugar de solo generar un informe estático, esta herramienta:
 
 1.  Clona este repositorio:
     ```bash
-    git clone [URL-DE-TU-REPO]
+    git clone https://github.com/koryroot/Asistente-lipieza-datos.git
     ```
 2.  Instala las dependencias:
     ```bash
