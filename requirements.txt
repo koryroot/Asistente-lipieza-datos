@@ -1,0 +1,6 @@
+pandas
+numpy
+ydata-profiling
+ipywidgets
+scikit-learn
+jupyterlab
