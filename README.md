@@ -1,51 +1,50 @@
-# Asistente Interactivo de Limpieza de Datos (Interactive EDA Cleaner) 🧹📊
+# 🧹📊 Interactive Data Cleaning Assistant (Interactive EDA Cleaner)
 
-[Estado: En Desarrollo 🚧]
+[Status: In Development 🚧]
 
-Un script de Python para Jupyter/Colab que automatiza el diagnóstico del Análisis Exploratorio de Datos (EDA) y proporciona una interfaz interactiva para la toma de decisiones de limpieza de datos.
+A Python script for Jupyter/Colab that automates Exploratory Data Analysis (EDA) diagnostics and provides an interactive interface for data cleaning decision-making.
 
-## El Problema: El EDA Manual es Lento
+## The Problem: Manual EDA is Slow
 
-El Análisis Exploratorio de Datos (EDA) es fundamental, pero a menudo nos encontramos ejecutando los mismos comandos (`.isnull().sum()`, `.describe()`, `boxplot...`) repetidamente. Identificar un problema es solo el primer paso; decidir *cómo* solucionarlo (imputar, eliminar, transformar) es la parte crítica, y suele ser un proceso manual de prueba y error.
+Exploratory Data Analysis (EDA) is fundamental, but we often find ourselves executing the same commands (`.isnull().sum()`, `.describe()`, `boxplot...`) repeatedly. Identifying a problem is only the first step; deciding *how* to resolve it (impute, drop, transform) is the critical part, and it usually involves a manual, trial-and-error process.
 
-## La Solución: Un Asistente de Decisión
+## The Solution: A Decision-Making Assistant
 
-Este proyecto combina el poder del **diagnóstico automático** con la **toma de decisiones interactiva**.
+This project combines the power of **automated diagnostics** with **interactive decision-making**.
 
-En lugar de solo generar un informe estático, esta herramienta:
-1.  **Diagnostica:** Utiliza `ydata-profiling` para escanear un DataFrame e identificar problemas clave (faltantes, duplicados, outliers, tipos de datos).
-2.  **Pregunta:** Emplea `ipywidgets` para presentar estos problemas al usuario con opciones de limpieza razonadas (ej. imputar con media, mediana, moda; eliminar filas/columnas).
-3.  **Actúa:** Aplica las transformaciones seleccionadas al DataFrame, permitiendo un ciclo de limpieza iterativo y controlado.
+Instead of merely generating a static report, this tool:
+1.  **Diagnoses:** Uses `ydata-profiling` to scan a DataFrame and identify key data quality issues (missing values, duplicates, outliers, data types).
+2.  **Prompts:** Uses `ipywidgets` to present these issues to the user alongside reasoned cleaning options (e.g., impute with mean, median, mode; drop rows/columns).
+3.  **Acts:** Applies the selected transformations to the DataFrame, enabling an iterative and controlled data cleaning cycle.
 
-## Tecnologías Utilizadas
+## Tech Stack
 
 * **Python 3.x**
-* **Pandas:** Para la manipulación de datos.
-* **ydata-profiling:** Para la generación de informes de diagnóstico.
-* **ipywidgets:** Para la creación de la interfaz interactiva en Jupyter.
-* **Scikit-learn:** (Próximamente) Para imputaciones más avanzadas (KNNImputer).
+* **Pandas:** For data manipulation and structures.
+* **ydata-profiling:** For diagnostic report generation.
+* **ipywidgets:** For building the interactive UI within Jupyter.
+* **Scikit-learn:** (Coming soon) For advanced imputation techniques (e.g., KNNImputer).
 
-## ¿Cómo Empezar?
+## Getting Started
 
-1.  Clona este repositorio:
+1.  Clone this repository:
     ```bash
-    git clone https://github.com/koryroot/Asistente-lipieza-datos.git
+    git clone [https://github.com/koryroot/Asistente-lipieza-datos.git](https://github.com/koryroot/Asistente-lipieza-datos.git)
     ```
-2.  Instala las dependencias:
+2.  Install dependencies:
     ```bash
     pip install pandas ydata-profiling ipywidgets
     ```
-3.  Abre el notebook `interactive_eda.ipynb` en Jupyter Lab o Google Colab.
-4.  Carga tu dataset y ¡empieza a limpiar!
+3.  Open the `interactive_eda.ipynb` notebook in Jupyter Lab or Google Colab.
+4.  Load your dataset and start cleaning!
 
-## Roadmap (Próximos Pasos)
+## Roadmap (Next Steps)
 
-* [ ] Implementar manejo interactivo de duplicados.
-* [ ] Agregar detección y manejo de outliers (IQR, Z-score).
-* [ ] Integrar imputación avanzada (KNNImputer) como opción.
-* [ ] Añadir visualizaciones "antes y después" de la limpieza.
+* [ ] Implement interactive duplicate handling.
+* [ ] Add outlier detection and handling methods (IQR, Z-score).
+* [ ] Integrate advanced imputation (KNNImputer) as a selectable option.
+* [ ] Add "before and after" data visualizations for the cleaning process.
 
-## Contribuciones
+## Contributing
 
-¡Este es un proyecto de aprendizaje y está abierto a contribuciones! Si tienes ideas para mejorar la herramienta, por favor abre un "Issue" o envía un "Pull Request".
-
+This is a continuous learning project and is open to contributions! If you have ideas to improve the tool, please open an Issue or submit a Pull Request.
